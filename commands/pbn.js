@@ -5,11 +5,13 @@
   auto_retry_time: 
 
   <<ANSWER
-A função PlayBoot Ban's Network está em desenvolvimento
-mas, por ai no Telegram tem uns rastros desse comando
-você consegue achar?
+
   ANSWER
   keyboard: 
   aliases: 
 CMD*/
 
+var buttons = [
+[ {title: "PlayBoot Ban's Network", url: "t.me/playbootpbn" } ]
+]
+Bot.sendInlineKeyboard(buttons, "PlayBoot Ban's Network (TELEGRAM)")
