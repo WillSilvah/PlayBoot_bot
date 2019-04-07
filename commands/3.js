@@ -3,8 +3,21 @@
   help: 
   need_reply: 
   auto_retry_time: 
-  answer: Lista 3
-  keyboard: 2, Gamer Play - Laboratory, 4
+
+  <<ANSWER
+
+  ANSWER
+
+  <<KEYBOARD
+
+  KEYBOARD
   aliases: 
 CMD*/
 
+var buttons = [
+    [ {title: "Voltar", command: "2"},
+      {title: "Gamer Play - Laboratory", command: "Laboratory" } ],
+    [ {title: "PlayBoot Ban's Network", command: "pbn" } ],
+    [ {title: "Seguinte", command: "4" } ]
+]
+Bot.sendInlineKeyboard(buttons, "Parte 3 OwO")
